@@ -13,3 +13,9 @@ NEWSPIDER_MODULE = 'CsdnColumn.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'CsdnColumn (+http://www.yourdomain.com)'
+
+ITEM_PIPELINES = {
+    'CsdnColumn.pipelines.CsdncolumnPipeline': 300,
+}
+
+LOG_LEVEL = 'INFO'

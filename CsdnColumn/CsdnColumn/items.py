@@ -5,7 +5,12 @@
 
 from scrapy.item import Item, Field
 
-class CsdncolumnItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
+class ColumnItem(Item):
+    colTitle = Field()
+    createTime = Field()
+    articleNum = Field()
+    views = Field()
+    detailLink = Field()
+    author = Field()
+    authorLink = Field()
+    colDesc = Field()
